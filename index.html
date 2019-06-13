@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pusher Spike</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		body { padding-top:50px; }
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<h1>Pusher Spike - server</h1>
+		<p>Represents the server part of proposed Pusher implementation</p>
+		<form>
+			<div class="row">
+				<div class="col-xs-2">
+					<button class="btn btn-success" id="pusher-button">Click me!</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<script>
+
+		$('#pusher-button').on('click', (event) => {
+
+			event.preventDefault();
+
+			$.ajax({
+				type: 'GET',
+				url: '/pusher',
+				success: function(resp) {
+					// console.log(resp)
+				},
+				error: function() {
+					console.log('There was a disturbance in the force')
+				}
+			});
+
+
+		})
+	</script>
+	
+</body>
+</html>
