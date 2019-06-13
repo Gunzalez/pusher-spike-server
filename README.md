@@ -3,10 +3,9 @@ Pusher Spike - server
 
 - Git clone
 - npm install
-- node server.js
+- node server.js (runs on port 8080)
 
 Usage
 --------
-- To be used with running app (https://github.com/Gunzalez/pusher-spike-app)
+- To be used with running app [Pusher app project](https://github.com/Gunzalez/pusher-spike-app)
 - Click on green button, see update in Pusher app project
-
