@@ -16,7 +16,7 @@
     "url": "https://github.com/scotch-io/express-sendfile/issues"
   },
   "dependencies": {
-    "express": "~4.10.2",
+    "express": "~4.18.2",
     "pusher": "^2.2.0"
   }
 }
